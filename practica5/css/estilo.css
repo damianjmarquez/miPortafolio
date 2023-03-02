@@ -1,0 +1,146 @@
+body{
+    background:url(../img/fondo.webp);
+}
+
+Header{
+    border-bottom:5px solid #FFD5CC;
+    border-top:5px solid #FFD5CC;
+    
+    background:rgb(255, 255, 255,0.4);
+    
+    font-size:20px;
+}
+
+.contenedor{
+    margin:auto;
+    padding:30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   
+
+}
+
+.contenedor a{
+    text-decoration: none;
+    color:rgb(180, 180, 180);
+    padding:15px;
+    margin-left: 30px;
+}
+
+.contenedor a:hover{
+    
+    color: rgb(0, 0, 0);
+}
+
+main{
+    display:flex;
+}
+
+.contenedor1{
+    
+  
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    
+
+}
+
+.contenedor1 .caja1{
+    width:100%;
+    height: 80px;
+    background: rgb(97, 229, 252);
+    flex-direction: row;
+    text-align:center;
+    margin: 5px;
+    border-radius: 7px;
+    font-size: 30px;
+    padding-top: 45px;
+    text-decoration: none;
+    color: rgb(60, 119, 248);
+
+}
+
+.contenedor1 .caja1:hover{
+    background: rgb(162, 239, 253);
+
+}
+
+.contenedor1 .caja2{
+    width:100%;
+    height: 80px;
+    background: #f7bcff;
+    flex-direction: row;
+    text-align:center;
+    margin: 5px;
+    border-radius: 7px;
+    font-size: 30px;
+    padding-top: 45px;
+    text-decoration: none;
+    color: rgb(200, 37, 250);
+
+}
+
+.contenedor1 .caja2:hover{
+    background: #f9dcfd;
+}
+
+.contenedor1 .caja3{
+    width:100%;
+    height: 80px;
+    background: rgb(255, 192, 120);
+    flex-direction: row;
+    text-align:center;
+    margin: 5px;
+    border-radius: 7px;
+    font-size: 30px;
+    padding-top: 45px;
+    text-decoration: none;
+    color: rgb(255, 113, 19);
+
+}
+.contenedor1 .caja3:hover{
+    background: rgb(255, 208, 155);
+}
+
+.contenedor1 .caja4{
+    width:100%;
+    height: 80px;
+    background: #D1FFC2;
+    flex-direction: row;
+    text-align:center;
+    margin: 5px;
+    border-radius: 7px;
+    font-size: 30px;
+    padding-top: 45px;
+    text-decoration: none;
+    color:#67ff34;
+}
+.contenedor1 .caja4:hover{
+    background: #defcd4;
+}
+
+.contenedor1 a{
+    text-decoration: none;
+    
+}
+
+@media (max-width: 600px){
+    .contenedor{
+        flex-direction: column;
+        padding:5px;
+        display: block;
+        text-align:center;
+        
+    }
+    
+    header .contenedor a{
+        font-size: 18px;
+        margin: 0;
+        padding:5px;
+        display:block;
+        border-bottom: 1px solid rgb(216, 216, 216);
+
+    }
+}

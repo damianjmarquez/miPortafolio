@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Indumentaria</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="https://kit.fontawesome.com/1053efa296.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="contenedor">
+         
+           <form class="form" name="formulario">
+            <input class="fechas" type="text" name="fecha">
+           </form>
+         
+        <nav class="navegador">
+            <a href="#">Registro</a>
+            <a href="#">Iniciar Seción</a>
+            <a href="#"> <span class="material-symbols-outlined">  shopping_cart</span> <p>Carrito</p> </a>
+        </nav>
+        <div class="imagen">
+            <div class="enlaces">
+                <div id="mujer" class="mujer">
+                    <a class="cierre" id="cerrar" href="#"onclick="cerrarm()">cerrar</a>
+                    
+                    <div class="columnas">
+                        <div class="primera">
+                            <a class="colorm" href="#"><b>Casual ▼</b> </a>
+                            <a class="colorm" href="#">Remeras</a>
+                            <a class="colorm" href="#">Bikinis</a>
+                            <a class="colorm" href="#">Juvenil</a>
+                            <a class="colorm" href="#">Deportivo</a>
+                        </div>
+
+                        <div class="segunda">
+                            <a class="colorm" href="#"><b>Formal/Invierno ▼</b></a>
+                            <a class="colorm" href="#">Vestidos</a>
+                            <a class="colorm" href="#">Accesorios</a>
+                            <a class="colorm" href="#">Trajes</a>
+                            <a class="colorm" href="#">Nueva Temporada</a>
+                        </div>
+                    </div>
+                    <div class="final">
+                            <h1>Ofertas De Otoño</h1>
+                            <h4>Desde el 50% de Descuento</h4>
+                    </div>
+                </div>
+                <!--enlace desplegable hombre-->
+
+                <div id="menu" class="opciones">
+                    <a href="" class="botonCerrar" onclick="cerrar()">cerrar</a>
+                        <div class="op">
+                            <div class="desplizq">
+                                <a class="grisc" href="#"><b>Casual ▼</b> </a>
+                                <a class="grisc" href="#">Abrigos</a>
+                                <a class="grisc" href="#">Deportivos</a>
+                                <a class="grisc" href="#">Pantalores</a>
+                                <a class="grisc" href="#">Remeras</a>
+                            </div>
+
+                            <div class="desplder">
+                                <a class="grisc" href="#"><b>Formal ▼</b></a>
+                                <a class="grisc" href="#">Chaquetas</a>
+                                <a class="grisc" href="#">Camisetas</a>
+                                <a class="grisc" href="#">Trajes</a>
+                                <a class="grisc" href="#">Pantalones</a>
+                            </div>
+                            
+                        </div>
+                        <div class="desplabajo">
+                            <h1>Ofertas De Invierno</h1>
+                            <h4>Desde el 50% de Descuento</h4>
+                        </div>
+                    
+                    
+                </div>
+
+
+                <!--fin de enlace desplegable hombre-->
+
+                
+                <a  href="#"  onclick="abrir()" ><b class="aqui">Hombre ▼</b> </a>
+                <a  href="#"  onclick="abrirm()" ><b>Mujer ▼</b></a>
+                <a  href="#" ><b>Nosotros</b></a>
+                <a  href="#"><b>Novedades</b></a>
+                <a  href="contacto.html"><b>Contacto</b></a>
+                <div>
+                    <div class="borrar">
+                        <input type="text" placeholder="Busqueda"><span class="material-symbols-sharp">
+                        search
+                        </span>
+                    </div>
+                
+                </div>  
+
+            </div>
+
+            <img src="imagenes/B.jpg" alt="">
+
+        </div>
+        <div class="fotos">
+            <nav class="fotonav">
+                <a href="#">POPULAR</a>
+                <a href="#">NOVEDADES</a>
+                <a href="#">MAS VENDIDOS</a>
+                <a href="#">OFERTAS</a>
+                <a  href="#" >MUY PRONTO</a>
+            </nav>
+            <div class="fotocentral">
+                <div class="fotoizquierda">
+                    <p>$ 30.000</p>
+                    <p class="l">$ 17.500</p>
+                    <section class="arriba">
+                        <div id="desplegarverde"  onmouseover="verdeAbrir()" onmouseout="verdeCerrar()"  class="desplegarverde">
+                            <img id="cambio"class="verde" src="imagenes/item-1.png" alt="">
+                            
+                            <div id="info" class="info">
+                                <div class="superior">
+                                    <h5>Blazer de Mujer: $30.000</h5>
+                                </div>
+                                <div class="inferior">
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">  shopping_cart</span>
+                                    </div>
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </div>
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">download_for_offline</span>
+                                    </div>
+
+                                </div>
+                            
+                            </div>
+                        </div>
+
+                        
+                        
+
+
+
+                        <div class="dblanco"  onmouseover="blancoAbrir()" onmouseout="blancoCerrar()" >
+                            <img id="blanco" class="blanco"  src="imagenes/item-2.png" alt="">
+
+                            <div id="info2" class="info">
+                                <div class="superior">
+                                    <h5>Elastisado de Mujer: $17.500</h5>
+                                </div>
+                                <div class="inferior">
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">  shopping_cart</span>
+                                    </div>
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </div>
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">download_for_offline</span>
+                                    </div>
+
+                                </div>
+                            
+                            </div>
+                        </div>
+
+
+                        
+                    </section>
+                    <p>$ 6900</p>
+                    
+                        <div  id="celeste" class="cuadro" onmouseover="celesteAbrir()" onmouseout="celesteCerrar()" >
+                            <img class="azul" src="imagenes/item-3.png" alt="">
+
+                            <div id="info3" class="infogrande">
+                                <div class="superior">
+                                    <h5>Remera Charge $6.900</h5>
+                                </div>
+                                <div class="inferior">
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">  shopping_cart</span>
+                                    </div>
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </div>
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">download_for_offline</span>
+                                    </div>
+
+                                </div>
+                            
+                            </div>
+
+                        </div>
+                    
+                </div>
+
+
+
+
+
+                
+                <div class="fotoderecha">
+                    <p class="linea"><del>$ 50.700  </del>   $42.900</p>
+
+                    <div  class="up" onmouseover="camperaAbrir()" onmouseout="camperaCerrar()" >
+                        <img id="campera" src="imagenes/item-4.png" alt="">
+
+                        <div id="info4" class="infogrande">
+                            <div class="superior">
+                                <h5>Campera flower &42.900</h5>
+                            </div>
+                            <div class="inferior">
+                                <div class="circulo">
+                                    <span class="material-symbols-outlined">  shopping_cart</span>
+                                </div>
+                                <div class="circulo">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </div>
+                                <div class="circulo">
+                                    <span class="material-symbols-outlined">download_for_offline</span>
+                                </div>
+
+                            </div>
+                        
+                        </div>
+                        
+                    </div>
+                    
+                    <p>$ 12.000</p>
+                    
+                    <div class="down">
+                        <div class="pantceleste" onmouseover="panalonAbrir()" onmouseout="pantalonCerrar()">
+                            <img id="u" class="u" src="imagenes/item-5.png" alt="">
+                            <div id="info5" class="info">
+                                <div class="superior">
+                                    <h5>Pantalon Owtford &12.000</h5>
+                                </div>
+                                <div class="inferior">
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">  shopping_cart</span>
+                                    </div>
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </div>
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">download_for_offline</span>
+                                    </div>
+    
+                                </div>
+                            
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="marron"onmouseover="marronAbrir()" onmouseout="marronCerrar()">
+                            <img id="marron" class="bajo" src="imagenes/item-6.png" alt="">
+                            <div id="info6" class="info">
+                                <div class="superior">
+                                    <h5>Remera Focal One $3.200</h5>
+                                </div>
+                                <div class="inferior">
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">  shopping_cart</span>
+                                    </div>
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </div>
+                                    <div class="circulo">
+                                        <span class="material-symbols-outlined">download_for_offline</span>
+                                    </div>
+    
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <footer>
+        <div class="informacion">
+            <section>
+                <p class="oscuro" > <strong>Informacion</strong> </p><br>
+                <a class="claro" href="#">Nosotros</a> <br> <br>
+                <a class="claro" href="#">Sucursales</a><br><br>
+                <a class="claro" href="#">Marcas</a><br><br>
+                <a class="claro" href="#">Mapa del Sitio</a>
+            </section>
+
+            <section>
+                <p class="oscuro"><strong>Porque Comprar</strong> </p><br>
+                <a class="claro" href="#">Envios Internacionales </a> <br> <br>
+                <a class="claro" href="#">Compra Segura</a><br><br>
+                <a class="claro" href="#">Testimonios</a><br><br>
+                <a class="claro" href="#">Mayoristas</a>
+            </section>
+
+            <section>
+                <p class="oscuro"><strong>Tu Cuenta</strong></p><br>
+                <a class="claro" href="#">Tus Descuentos</a> <br> <br>
+                <a class="claro" href="#">Seguimientos</a><br><br>
+                <a class="claro" href="#">Favoritos </a><br><br>
+                <a class="claro" href="#">Historial</a>
+            </section>
+
+            <section>
+                <p class="oscuro"><strong>Noticias</strong></p><br>
+                <a class="claro" href="#">Nuevas Sucursales</a> <br> <br>
+                <a class="claro" href="#">Ofertas y Descuentos</a><br><br>
+                <a class="claro" href="#">Dia de la Madre</a><br><br>
+                <a class="claro" href="#">Temporada 2022/2023</a>
+            </section>  
+
+            <section>
+                <p class="oscuro"><strong>Servicios</strong></p><br>
+                <a class="claro" href="#">Asesoramiento Online</a> <br> <br>
+                <a class="claro" href="#">Bolsa de Trabajo</a><br><br>
+                <a class="claro" href="#">Catalogo Online</a><br><br>
+                <a class="claro" href="#">Guarderia</a>
+            </section>
+
+            
+        </div>
+
+        <div class="redes">
+            
+                <a href="https://es-la.facebook.com/login/device-based/regular/login/"target="_blank"><i id="face" onmouseover="redesOpen()" onmouseout="redesClose()" class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"target="_blank"><i id="twi" onmouseover="twiOpen()" onmouseout="twiClose()" class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"target="_blank"><i id="inst" onmouseover="instOpen()" onmouseout="instClose()" class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.youtube.com/"target="_blank"><i id="you" onmouseover="youOpen()" onmouseout="youClose()" class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script src="javascript.js"></script>
+   
+</body>
+</html>

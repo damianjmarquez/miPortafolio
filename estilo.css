@@ -1,0 +1,497 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.contenedorPrincipal{
+    background: rgb(255, 255, 255);
+    margin: auto;
+    width:100%;
+    height: 100%;
+}
+
+.menu{
+    position: fixed;
+    overflow:hidden;
+    background:rgb(9, 0, 94);
+    display: flex;
+    display: block;
+    flex-direction: column;
+    height: 350px;
+    width: 0;
+    transition: 0.5s;
+    top: 0;
+    left: 0;
+}
+
+.desplegar{
+    width:100%;
+    background:rgb(255, 255, 255);
+    position: fixed;
+    display: block;
+    padding-bottom:10px;
+}
+.desplegar .hamburguesa{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content:center;
+    font-size: 40px;
+    
+    
+}
+
+.imagen{
+    margin-top: 20px;
+    display: flex;
+    justify-content:center;
+    
+    
+}
+.yo{
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+    width: 150px;
+    height:150px;
+    margin-bottom: 20px;
+}
+.imag{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.imagen h2{
+    color:rgb(255, 255, 255);
+    
+    margin-bottom: 15px;
+
+}
+.imagen p{
+    color:rgb(255, 255, 255);
+    
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+nav{
+    display:flex;
+    flex-direction:column;
+    
+    
+}
+nav a{
+    background: rgb(255, 255, 255);
+    padding: 7px;
+    margin: 7px auto ;
+    border-radius: 20px;
+    width: 270px;
+    text-align:center;
+    text-decoration: none;
+    color: rgb(17, 15, 119);
+    
+}
+
+.contenido{
+    
+    width:100%; 
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+
+.analista{
+    width: 80%;
+    height:80%;
+    margin: auto;
+
+}
+.analista .analis{
+    width: 100%;
+    height:100%;
+}
+
+
+.presentacion{
+    padding-top: 200px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-bottom: 200px;
+}
+
+.descarga{
+    width:220px;
+    margin-left: 10px;
+    margin-top:20px;
+    padding: 5px;
+    background: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius:10px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+.descarga a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size:20px;
+    
+}
+.descarga .fa-solid{
+    margin-top: 0;
+    margin-left: 5px;
+    color: rgb(16, 18, 104);
+    font-size:20px;
+}
+.contenido{
+    border-bottom: 1px solid yellow;
+}
+.contenido h1{
+    color:rgb(47, 42, 90);
+    text-align:center;
+    padding-top:150px;
+}
+.contenido h3{
+    margin-top: 10px;
+    text-align:center;
+    font-size: 25px;
+}
+span{
+    color:rgb(91, 99, 204);
+}
+.presentacion p{
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size:20px;
+    
+    
+}
+.certificaciones{
+    color: white;
+    margin: auto;
+    border-bottom: 1px solid yellow;
+    padding-bottom:200px;
+    
+}
+
+.dentro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.chico{
+    width:160px;
+    height: 130px;
+    padding: 0;
+}
+.chico img{
+    margin: 0;
+    padding: 0px;
+}
+
+.certificaciones h1{
+    color:white;
+   
+    padding-top:150px;
+    padding-bottom:30px;
+}
+.cert{
+    color: white;
+    font-size: 25px;
+    text-align:center;
+    text-decoration: none;
+    
+    
+}
+.certi {
+    margin:20px;
+    display: flex;
+    align-items: center;
+}
+
+.certi button{
+    margin-left: 20px;
+    width: 100px;
+    height:30px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+    background: black;
+    color: white;
+    font-size:18px;
+    cursor: pointer;
+}
+
+.centro{
+    margin-left: 30px;
+}
+
+.trabajos{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid rgb(33, 29, 87);
+    padding-bottom:30px;
+    
+}
+.trabajo{
+    
+    width: 200px;
+    height: 270px;
+    margin: 15px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.trabajo img{
+    width: 100%;
+    height: 100%;
+    
+    z-index: -1; 
+}
+
+.trabajo p{
+    color:rgb(22, 21, 102);
+    font-size:18px;
+    background: rgb(255, 255, 255,.2);
+    padding: 10px;
+    
+    margin: 7px;
+    border-radius: 4px;
+    
+}
+.fa-solid{
+    font-size: 40px;
+    color: rgb(43, 28, 110);
+    margin-top: 10px;
+}
+
+.trabajo button{
+    color: rgb(255, 255, 255);
+    width: 160px;
+    height:30px;
+    border-radius:0 15px 15px 0;
+    background: rgb(45, 35, 88);
+    border: 1px solid rgb(29, 34, 100);
+    cursor: pointer;
+    font-family: arial;
+    color: rgb(255, 255, 255);
+}
+.lenguajes{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(35, 29, 114);
+}
+.texto{
+    color: rgb(31, 36, 99);
+    margin-top:20px;
+    text-align: center;
+}
+.lenguajes .se{
+    width:150px;
+    height:150px;
+    margin: 30px;
+    background: rgba(43, 30, 90, 0.1);
+    border-radius: 8px;
+
+}
+.lenguajes .se img{
+    width:100%;
+    height:100%;
+}
+
+.lenguajes .chico{
+    width:130px;
+    height:130px;
+    
+}
+
+h1{
+    color: rgb(28, 27, 109);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contacto{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom:100px;
+    background: rgb(28, 19, 105);
+
+}
+.contacto .datos{
+    width:50%;
+    padding-bottom: 50px;
+}
+.contacto form{
+    width:50%;
+    padding: 30px;
+    text-align: center;
+}
+.contacto .datos h1{
+    color: white;
+    margin:30px;
+    
+}
+.contacto input{
+    width:100%;
+    background: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.contacto textarea{
+    max-width:100%;
+    min-width:100%;
+    max-height: 200px;
+    min-height: 200px;
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.contacto form .boton{
+    width:130px;
+    height:40px;
+    background: rgb(27, 21, 104);
+    color: white;
+    margin-top:10px;
+    border-radius: 3px;
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+
+.contacto form input:focus{
+    outline:none;
+}
+.contacto form textarea:focus{
+    outline:none;
+}
+.datos h1{
+    text-align:center;
+}
+.datos h2{
+    color: white;
+    
+    margin-top: 30px;
+    padding-bottom: 10px;
+    font-size:18px;
+    font-family: sans-serif;
+    text-align: center;
+    border-bottom: 0.5px solid rgb(83, 82, 82);
+    
+    
+}
+
+
+
+
+
+
+@media (max-width:1500px){
+    .menu{
+        
+        width:100%;
+    }
+    
+    
+    
+}
+@media (max-width:1000px){
+    .menu{
+        
+        width:100%;
+        height:100%;
+        
+        
+    }
+    .presentacion{
+        width: 100%;
+    }
+    .certificaciones{
+        padding-left:30px;
+        
+    }
+    .contacto{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contacto .datos{
+        width: 100%;
+    }
+    
+    .contacto form{
+        width:100%;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+}
+
+@media (max-width:700px){
+    
+    .menu{
+        width:100%;
+        height:100%;
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    .presentacion{
+        padding-top: 50px;
+    }
+    .imag{
+        width: 100%;
+        align-items: center;
+    }
+    .imagen{
+         margin-top: 50px;
+        flex-direction: column;
+        
+    }
+    
+}
+
+@media (max-width:450px){
+    
+    .certificaciones{
+        text-align: center;
+    }
+    
+    
+}
