@@ -1,0 +1,70 @@
+.header{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .h1{
+    color: white;
+    text-decoration: none;
+}
+.header .a{
+    text-decoration: none;
+    color: white;
+    
+
+}
+.header .button{
+    background-color:rgb(0, 0, 0);
+    display: none;
+    color: white;
+}
+.header .svg{
+    width: 2em;
+    height: 2em;
+}
+.header .nav{
+    background-color: rgb(0, 0, 0);
+}
+.header .ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.header .li{
+    margin: 0 .5em;
+
+}
+
+
+@media (max-width:500px){
+    .header .button{
+        display: block;
+    }
+    .header .nav{
+        width: 100%;
+        pointer-events: none;
+        height: 0;
+        overflow: hidden;
+        transition: all .5s ease;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .nav.activo{
+        pointer-events: auto;
+        height: 50vh;
+    }
+    .header .ul{
+        flex-direction: column;
+    }
+    .header .li{
+        margin: 1rem 0;
+    }
+}
