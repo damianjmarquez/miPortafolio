@@ -1,0 +1,179 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+
+body {
+    background: #fdf3f7;
+    color: #333;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 10px solid #DEB887; /* 👈 Borde agregado */
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+.overlay-nubes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: url('https://png.pngtree.com/png-clipart/20210425/original/pngtree-bubbles-png-image_6251505.png') repeat-x;
+    opacity: 0.5;
+    animation: moverNubes 60s linear infinite;
+    background-position: bottom center;
+    pointer-events: none;
+}
+
+@keyframes moverNubes {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+.juegos h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #DEB887;
+}
+
+
+header {
+    text-align: center;
+    background-color: #DEB887;
+    color: black;
+    padding: 40px 20px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+    header h1 {
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #DEB887;
+    text-align: center;
+}
+
+.presentacion p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.juegos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.juego {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+    .juego:hover {
+        transform: translateY(-5px);
+    }
+
+    .juego img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+.videos ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.videos li {
+    margin: 10px 0;
+}
+
+.videos a {
+    color: #DEB887;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .videos a:hover {
+        text-decoration: underline;
+    }
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #DEB887;
+    padding-bottom: 20px;
+}

@@ -1,227 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principal</title>
-    <link rel="stylesheet" href="estilo.css">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="whatsapp.css">
-
-    <script src="https://kit.fontawesome.com/1053efa296.js" crossorigin="anonymous"></script>
+    <title>Portafolio | Desarrollador de Videojuegos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
+<a href="https://wa.me/5493512120278" class="whatsapp" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
+</a>
+
 <body>
-
-    <a href="https://api.whatsapp.com/send?phone=3512120278&text=Estimado%20espero%20hayas%20disfrutado%20mi%20portafolio" class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
-    </a>
-
-    <div class="contenedorPrincipal">
-        <div class="desplegar">
-            <a class="hamburguesa" href="#" onclick="abrir()"><i class="fa-solid fa-bars"></i> </a>
-        </div>
-        <div id="info" class="menu">
-            
-            
-
-
-
-            <div class="imagen">
-                <div class="imag">
-                    <img class="yo" src="imagenes/yo.jpg" alt="">
-                    <h2>Marquez Damian</h2>
-                    <p>Desarrollador Web</p>
-                </div>
-                <nav>
-                    <a href="#present" onclick="cierra()">MI PRESENTACION</a>
-                    <a id="c" href="#certificados" onclick="cierra()">CERTIFICACIONES</a>
-                    <a href="#trabajitos" onclick="cierra()">MIS TRABAJOS</a>
-                    <a href="#lenguajesi" onclick="cierra()">LENGUAGES QUE SE</a>
-                    
-                    <a href="#contactame" onclick="cierra()">MIS DATOS Y CONTACTO</a>
-                </nav>
-            </div>
-            
-        </div>
-        <div class="contenido">
-            
-            <div  class="presentacion">
-                <h1 id="present">MI <SPAN>PRESENTACION</SPAN> </h1>
-                <h3>¡Hola Estimados!</h3>
-                <p  >Mi nombre es Damián josé Márquez, soy de la provincia de Córdoba Capital,
-                     <span>me apasiona lo que hago con relación a la programación, Sigo estudiando
-                        actualmente, todo conocimiento es poder,
-                     </span> 
-                     siempre estoy buscando desafíos nuevos, mi sueño es trabajar de la programación. 
-                     he realizado varios trabajos y me he sentido extremadamente cómodo, soy una persona que le gusta trabajar
-                     en equipo y resolver problemas de toda índole,<span> soy sociable, adaptativo, autodidacta, predispuesto y con muchas ganas de 
-                        aprender
-                     </span>
-                    a continuación pueden verificar mis certificaciones y trabajos realizados en todo este
-                    proceso de capacitacion y experiencia, como así también mi contacto para una mayor comodidad tambien puedes
-                    descargar mi cv con toda mis datos a tu disposición o bien contactarme por mail en el formulario o por el enlace
-                    a mi whatsApp personal
-                     <span >espero éste portafolio de su agrado y estoy a su entera disposición.</span> 
-                    <div class="descarga"><a download="CV Marquez Damian" href="imagenes/CV Damián José Márquez.pdf">Descarga mi CV </a></div>
-                </p>
-            </div>
-            <div class="certificaciones">
-                <h1  id="certificados">MIS <SPAN>CERTIFICACIONES</SPAN> </h1>
-                <div class="dentro">
-                <div class="trabajo">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <p><img src="imagenes/cert1.jpg"></p>
-                    <a  target="_blank"href="imagenes/certificado1.html"><button>VER</button></a>
-                </div>
-                <div class="trabajo">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <p><img src="imagenes/cert2.jpg"></p>
-                    <a target="_blank" href="imagenes/certificado2.html"><button>VER</button></a>
-                </div>
-                <div class="trabajo">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <p><img src="imagenes/cert3.jpg"></p>
-                    <a target="_blank" href="imagenes/certificado3.html"><button>VER</button></a>
-                </div>
-                <div class="trabajo">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <p><img src="imagenes/web.jpg"></p>
-                    <a target="_blank" href="web.html"><button>VER</button></a>
-                </div>
-                <div class="trabajo">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <p><img src="imagenes/sqlc.jpg"></p>
-                    <a target="_blank" href="web.html"><button>VER</button></a>
-                </div>
-                <div class="trabajo">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <p class="chico"><img src="imagenes/analista.jpg"></p>
-                    <a target="_blank" href="analista.html"><button>VER</button></a>
-                </div>
-                </div>
-
-
-                
-                 
-            </div>
-            <h1 id="trabajitos" >MIS <SPAN>TRABAJOS</SPAN> </h1>
-            <div class="trabajos">
-
-                <div class="trabajo">
-                    <i class="fa-sharp fa-solid fa-circle-down"></i>
-                    <p>Pagina Dojo Rojas responsiv HTML, CSS, JAVASCRIPT</p>
-                    <a  target="_blank"href="https://damianjmarquez.github.io/Dojo-Rojas/"><button>VER</button></a>
-                </div>
-                
-                <div class="trabajo">
-                    <i class="fa-sharp fa-solid fa-circle-down"></i>
-                    <p>Pagina de una jardineria, responsive,adaptativa, realizada con HTML y CSS.</p>
-                    <a  target="_blank"href="practica1/index.html"><button>VER</button></a>
-                </div>
-                <div class="trabajo">
-                    <i class="fa-solid fa-handshake"></i>
-                    <p>tienda de ropa, HTML, CSS y JAVASCRIPT trabajo con el DOM, efectos visuales.
-                    </p>
-                    <a target="_blank" href="practica2/index.html"><button>VER</button></a>
-                </div>
-                <div class="trabajo">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <p>Es un menu adaptativo con interesante interfas visual para menu o barra adaptativa</p>
-                    <a target="_blank" href="practica3/index.html"><button>VER</button></a>
-                </div>
-                <div class="trabajo">
-                    <i class="fa-solid fa-address-book"></i>
-                    <p>Diseño responsive, adaptativo y menu desplegable HTML,CSS,JavaScript, dinámica en imagenes.</p>
-                    <a target="_blank" href="practica4/index.html"><button>VER</button></a>
-                </div>
-                <div class="trabajo">
-                    <i class="fa-solid fa-users"></i>
-                    <p>realizado en HTML Y CSS, con interfaz visual,responsive, adaptativo, varias páginas    </p>
-                    <a target="_blank" href="practica5/index.html"><button>VER</button></a>
-                </div>
-                <div class="trabajo">
-                    <i class="fa-sharp fa-solid fa-circle-down"></i>  
-                    <p>Pagina de una cafetería, responsive,adaptativa, realizada con HTML, CSS y js</p>
-                    <a  target="_blank"href="practica7/index.html"><button>VER</button></a>
-                </div>
-                <div class="trabajo">
-                    <i class="fa-solid fa-handshake"></i>
-                    <p>tienda de internet, HTML, CSS y JAVASCRIPT trabajo con el DOM, efectos visuales.
-                    </p>
-                    <a target="_blank" href="practica6/index.html"><button>VER</button></a>
-                </div>
-                
-            </div>
-            <h1 id="lenguajesi">LENGUAJES <SPAN>QUE SE</SPAN> </h1>
-            <p  class="texto" >Y SIGO APRENDIENDO </p>
-            <div class="lenguajes">
-                <div class="se">
-                    <img src="imagenes/git.png" alt="">
-                </div>
-                <div class="se">
-                    <img src="imagenes/github.png" alt="">
-                </div>
-                <div class="se">
-                    <img src="imagenes/html.png" alt="">
-                </div>
-                <div class="se">
-                    <img src="imagenes/css.png" alt="">
-                </div>
-                <div class="se">
-                    <img src="imagenes/java.png" alt="">
-                </div>
-                <div class="se">
-                    <img class="chico" src="imagenes/js.png" alt="">
-                </div>
-                <div class="se">
-                    <img class="chico" src="imagenes/py.png" alt="">
-                </div>
-                <div class="se">
-                    <img src="imagenes/corel.png" alt="">
-                </div>
-                <div class="se">
-                    <img src="imagenes/ps.png" alt="">
-                </div>
-                <div class="se">
-                    <img src="imagenes/XD.png" alt="">
-                </div>
-                <div class="se">
-                    <img src="imagenes/sql.png" alt="">
-                </div>
-                <div class="se">
-                    <img src="imagenes/angular.svg" alt="">
-                </div>
-            </div>
-
-            
-
-            <div class="contacto">
-                <div id="contactame" class="datos">
-                    <h1 >MIS <SPAN>DATOS PERSONALES</SPAN> </h1>
-                   
-                    <h2>Nombre :  <SPAN>Damián</SPAN> </h2>
-                    <h2>Apellido :  <SPAN>  Márquez</SPAN> </h2>
-                    <h2>Estado civil :  <SPAN>Casado</SPAN> </h2>
-                    <h2>Teléfono : <SPAN>3512120278</SPAN> </h2>
-                    <h2>Ciudad : <SPAN>Córdoba</SPAN> </h2>
-                    <h2>E-mail : <SPAN>Damianjmarquez@gmail.com</SPAN> </h2>
-                    
-                </div>
-                <form id="form">  
-                    <h1 > <SPAN>CONTACTAME</SPAN> </h1>
-                    <input type="text" name="name" required placeholder="INGRESE EL NOMBRE">
-                    <input type="text" name="name" required placeholder="INGRESE EL APELLIDO">
-                    <textarea name="mensaje" required placeholder="INGRESE SU MENSAJE"></textarea>
-                    
-                    <input class="boton" type="submit" value="Enviar">
-                </form>
-            </div>
-        </div>
-
+    <div class="banner">
+        <div class="overlay-nubes"></div>
+        <img src="imagenes/FondoBanner.jpeg" alt="Banner del Portafolio">
     </div>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js.js"></script>
+
+    <header>
+        <div class="contenedor">
+            <h1>Mi Portafolio</h1>
+            <p>Desarrollador Indie | Unity 2D | C#</p>
+        </div>
+    </header>
+
+    <section class="presentacion contenedor">
+        <h2>🎮 Sobre mí</h2>
+        <p>
+            Soy un desarrollador indie de videojuegos con una fuerte pasión por la creatividad, el arte estilo cartoon y las mecánicas de juego divertidas y accesibles. Me especializo en proyectos 2D desarrollados en Unity, con experiencia tanto en programación en C#, como en diseño visual y mecánicas jugables, buscando siempre un equilibrio entre estilo, fluidez y entretenimiento.
+
+            Actualmente estoy trabajando en varios títulos originales como Malva y Zelta, donde combino ilustraciones coloridas, mundos imaginativos y dinámicas simples pero adictivas. En cada proyecto me enfoco en mantener un código limpio y modular, utilizando scripts organizados, prefabs y sistemas de gestión para facilitar la escalabilidad y el mantenimiento.<br>
+
+            🎨 También desarrollo banners, animaciones y UI con un enfoque profesional y coherente con la estética de cada juego. Me gusta pulir cada detalle visual para ofrecer una experiencia completa y envolvente.<br>
+
+            🚀 Comparto avances de desarrollo en forma de microvideos, mostrando desde prototipos hasta funciones finales, y buscando constantemente feedback para mejorar.<br>
+
+            👾 Estoy en constante aprendizaje, experimentando con nuevas ideas y herramientas, y con el objetivo claro de publicar juegos en la Play Store y otras plataformas. Me motiva la idea de que cada juego que creo puede entretener, inspirar y conectar con otros..
+        </p>
+    </section>
+
+    <section class="juegos">
+        <h2>🎮 Juegos Destacados</h2>
+        <div class="juego">
+            <img src="imagenes/Malva.jpeg" alt="Juego Malva">
+            <div>
+                <h3>Malva</h3>
+                <p>Una aventura encantadora en el bosque. Estilo cartoon, enemigos peligrosos y mecánicas simples para disfrutar.</p>
+            </div>
+        </div>
+
+        <div class="juego">
+            <img src="imagenes/Zelta.jpeg" alt="Juego Zelta">
+            <div>
+                <h3>Zelta</h3>
+                <p>Exploración, cofres de colores y frutas coleccionables. Con un menú de selección de personajes, ideal para divertirse.</p>
+            </div>
+        </div>
+        <div class="juego">
+            <img src="imagenes/Arana.jpeg" alt="Juego Fun">
+            <div>
+                <h3>Unity & Fun</h3>
+                <p>Exploración, cofres de colores y frutas coleccionables. Con un menú de selección de personajes, ideal para divertirse.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="videos contenedor">
+        <h2>📹 Juegos realizados</h2>
+        <h2 style="font-size: 45px; color: #DC143C;">Zelta</h2>
+        
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=xiOc2AKdrK4&t=9s" target="_blank">Zelta Parte 1</a></li>
+            <li><a href="https://www.youtube.com/watch?v=LttO7YcUOP0" target="_blank">Zelta Parte 2</a></li>
+            <li><a href="https://www.youtube.com/watch?v=c6cw-PQOgKE" target="_blank">Zelta Parte 3</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <p>© 2025 - Desarrollado por Damian Marquez. Todos los derechos reservados.</p>
+           
+        </div>
+    </footer>
 </body>
 </html>
