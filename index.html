@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
+<!-- CSS de Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 <a href="https://wa.me/5493512120278" class="whatsapp" target="_blank">
     <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
 </a>
@@ -24,7 +27,7 @@
         <div class="contenedor">
             <h1 style="font-size: 40px; color: #a101ae;">Mi Portafolio</h1>
             <p style="color: #7a5100; ">Desarrollador Indie | Unity 2D/3D | C# | Blender</p>
-            
+
         </div>
     </header>
 
@@ -41,6 +44,29 @@
 
             👾 Estoy en constante aprendizaje, experimentando con nuevas ideas y herramientas, y con el objetivo claro de publicar juegos en la Play Store y otras plataformas. Me motiva la idea de que cada juego que creo puede entretener, inspirar y conectar con otros..
         </p>
+    </section>
+
+    <section class="presentacion contenedor">
+        <h2>Proyectos en Blender</h2>
+        
+    </section>
+
+    <section class="blender">
+        <!-- Swiper -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="imagenes/Escritorio.png" alt="Imagen 1"></div>
+                <div class="swiper-slide"><img src="imagenes/Ajedrez.png" alt="Imagen 2"></div>
+                <div class="swiper-slide"><img src="imagenes/LivingEscena1.png" alt="Imagen 3"></div>
+                <div class="swiper-slide"><img src="imagenes/LivingEscena2.png" alt="Imagen 4"></div>
+            </div>
+
+            <!-- Controles -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
 
     <section class="juegos">
@@ -88,6 +114,25 @@
 
                     🗣️ Interacción con NPCs
                     Dialogá con personajes no jugables que pueden ayudarte, darte pistas... o complicarte la aventura.
+                </p>
+            </div>
+        </div>
+
+        <div class="juego">
+            <img src="imagenes/Arcadia.jpeg" alt="Juego Fun">
+            <div>
+                <h3>Arcadia</h3>
+                <p>
+                    
+
+                    Género: Aventura / Supervivencia
+
+                    Plataforma: PC (desarrollado en Unity)
+
+                    Descripción:
+                    Arcadia narra la historia de un niño perdido en el bosque que debe sobrevivir a los zombis que aparecen por la noche.
+                    El jugador puede recolectar monedas, pócimas y cofres con dólares, los cuales sirven para comprar sombreros y objetos especiales en la tienda.
+                    A medida que avanza, deberá superar escenas cada vez más desafiantes mientras intenta escapar con vida.
                 </p>
             </div>
         </div>
@@ -180,5 +225,40 @@
 
         </div>
     </footer>
+
+    <!-- JS de Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,              // vuelve al inicio
+            autoplay: {              // autoplay automático
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <style>
+        .swiper {
+            width: 600px; /* Ajusta según tu diseño */
+            height: 400px;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* recorta para llenar */
+            border-radius: 12px;
+        }
+    </style>
 </body>
 </html>
