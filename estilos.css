@@ -223,3 +223,49 @@ footer {
     color: #DEB887;
     padding-bottom: 20px;
 }
+
+
+
+
+
+
+.botones-juego {
+    display: flex;
+    flex-direction: column; /* 🔽 los pone uno debajo del otro */
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.btn {
+    width: 180px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none; /* 👈 elimina el subrayado */
+    text-align: center; /* centra el texto si usás <a> */
+    display: inline-block; /* asegura tamaño si usás <a> */
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+    .btn:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+
+    /* Colores */
+    .btn.verde {
+        background-color: #2ecc71;
+    }
+
+    .btn.rojo {
+        background-color: #e74c3c;
+    }
+
+    .btn.azul {
+        background-color: #3498db;
+    }
+
